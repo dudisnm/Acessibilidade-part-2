@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Filmes de Romance</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap e Ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================
+       Header / Navegação
+       ========================= -->
+  <header class="p-5">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img/Marcador de página ticket book lover's club.jpg" 
+           class="rounded-pill" alt="Logo Romance" width="300" height="275" loading="lazy" />
+
+      <ul class="nav mt-5">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Menu de Acessibilidade -->
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">
+          Acessibilidade
+        </button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+          <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+          <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+          <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores">
+            <i class="bi bi-shadows"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================
+       Main Content
+       ========================= -->
+  <main class="container my-5">
+
+    <!-- Seção Início / Hero -->
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex justify-content-between align-items-center">
+        <div class="esquerda-conteudo">
+          <h1 class="display-4 text-white fst-italic fw-bold">
+            Boas-vindas! Encontre aqui os melhores romances
+          </h1>
+          <img src="img/transferir (2).jpg" class="mb-3" width="563" height="278" loading="lazy" alt="Cena de filme de romance" />
+          <a href="#Romance" class="btn btn-primary btn-lg botao-inicio fw-semibold">
+            Quero conhecer um filme!
+          </a>
+        </div>
+        <img src="img/transferir (6).jpg" class="rounded-pill" 
+             alt="Elenco principal do filme Para todos os garotos que eu já amei" 
+             title="Para todos os garotos que eu já amei" />
+      </div>
+    </section>
+
+    <!-- Seção Romance / Sobre o Filme -->
+    <section id="Romance" class="my-5 pt-6 secao-Romance">
+      <div class="container d-flex align-items-center">
+        <div class="col-4 d-flex justify-content-center">
+          <img src="img/A todos los chicos de los que  me enamoré (2018).jpg" 
+               class="rounded-pill" width="273" height="331" loading="lazy" alt="Poster do filme Para Todos os Garotos que Já Amei" />
+        </div>
+        <div class="col-5">
+          <h2>Sobre o que fala o filme?</h2>
+          <p class="p-2">
+            O filme “Para Todos os Garotos que Já Amei” (2018) acompanha a vida de Lara Jean Covey, uma adolescente reservada que prefere viver suas paixões em segredo. Para lidar com seus sentimentos, ela escreve cartas íntimas para cada garoto de quem já gostou, mas nunca pretende enviá-las. Tudo sai do controle quando, acidentalmente, essas cartas são enviadas, expondo seus antigos crushes, entre eles Josh, vizinho e ex-namorado de sua irmã, e Peter Kavinsky, um dos garotos mais populares da escola. Para evitar conflitos com Josh, Lara Jean e Peter decidem fingir um namoro. Aos poucos, o que parecia apenas um acordo de conveniência se transforma em uma relação sincera, fazendo com que Lara Jean enfrente seus medos, descubra o valor de assumir seus sentimentos e aprenda mais sobre amor, amizade e família.
+            <br><strong>Fontes: AdoroCinema; Wikipedia</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="my-5">
+      <h2 class="text-center pt-5">Galeria</h2>
+      <div class="container p-3 mt-3 fundo-galeria">
+        <div class="row justify-content-md-center">
+          <div class="col-md-4">
+            <img src="img/Gwiazd naszych wina - The Fault in Our Stars (Dramat _ Romans 2014).jpg" class="img-fluid rounded-5" loading="lazy" alt="Cena do filme A Culpa é das Estrelas" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/transferir (5).jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem de filme de romance" />
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-md-center">
+          <div class="col-md-4">
+            <img src="img/transferir (3).jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem de filme de romance" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/transferir (4).jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem de filme de romance" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="my-5">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario">
+          <h2 class="mb-3">Entre em contato</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+       ========================= -->
+  <footer class="text-center p-3 fst-italic">
+    <p>Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp" aria-label="WhatsApp"></i>
+    <i class="bi bi-instagram" aria-label="Instagram"></i>
+    <i class="bi bi-tiktok" aria-label="TikTok"></i>
+    <p class="mt-3">Desenvolvido por Eduarda. Projeto sem fins comerciais.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>

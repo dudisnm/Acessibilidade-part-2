@@ -1,0 +1,280 @@
+/* =========================
+   Design Tokens - Tema Romance
+   ========================= */
+:root {
+  --bg: #ffeef0;                  /* fundo suave e romântico */
+  --surface: #fff4f6;             /* caixas e cartões */
+  --text: #2c2c2c;                /* texto principal escuro */
+  --muted: #6b6b6b;               /* texto secundário */
+  --primary: #ff6b81;             /* botões/links */
+  --primary-contrast: #ffffff;    /* texto sobre primary */
+  --link: #ff8fa3;                /* links */
+  --border: rgba(0,0,0,.1);
+  --shadow: 0 6px 18px rgba(0,0,0,.15);
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* =========================
+   Reset leve / base
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 20% 0%, #ffe0e6 0%, var(--bg) 100%) fixed;
+  color: var(--text);
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Foco bem visível */
+:focus {
+  outline: 3px solid #ff9bb3;
+  outline-offset: 2px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* =========================
+   Header / Navegação
+   ========================= */
+header {
+  background: transparent;
+}
+
+.nav-img {
+  width: clamp(140px, 20vw, 220px);
+  height: auto;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.2));
+}
+
+.nav .nav-link {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+.nav .nav-link:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   Botão + Menu de Acessibilidade
+   ========================= */
+.menu-acessibilidade {
+  position: relative;
+  z-index: 50;
+}
+
+#botao-acessibilidade {
+  background: var(--primary);
+  color: var(--primary-contrast);
+  border: none;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform .2s ease, filter .2s ease;
+}
+#botao-acessibilidade:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+.rotacao-botao:active {
+  transform: scale(.98);
+}
+
+.opcoes-acessibilidade {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .5rem;
+  display: flex;
+  gap: .5rem;
+  box-shadow: var(--shadow);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  opacity: 1;
+}
+.opcoes-acessibilidade button {
+  background: var(--primary);
+  color: var(--primary-contrast);
+  border: none;
+  padding: .45rem .7rem;
+  border-radius: .75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.opcoes-acessibilidade button:focus {
+  outline-color: #ff9bb3;
+}
+
+/* Classe para esconder/mostrar a lista com JS */
+.apresenta-lista {
+  display: none !important;
+}
+
+/* =========================
+   Seção Início / Hero
+   ========================= */
+.inicio-fundo {
+  background: linear-gradient(180deg, rgba(255,200,220,.1), rgba(255,240,245,.05));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: clamp(1rem, 3vw, 2rem);
+  box-shadow: var(--shadow);
+  gap: 1.5rem;
+}
+.esquerda-conteudo h1 {
+  text-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+.botao-inicio {
+  background: var(--primary);
+  border: none;
+  border-radius: 999px;
+  padding: .85rem 1.25rem;
+  font-weight: 700;
+  color: var(--primary-contrast);
+}
+
+/* =========================
+   Seções de conteúdo
+   ========================= */
+.secao-Romance,
+.fundo-galeria {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: clamp(1rem, 3vw, 2rem);
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   Galeria
+   ========================= */
+.fundo-galeria img {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+/* =========================
+   Formulário
+   ========================= */
+.formulario {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+.formulario label {
+  font-weight: 600;
+  color: var(--muted);
+}
+.form-control {
+  background: rgba(255,255,255,.85);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.form-control::placeholder {
+  color: #c56b7b;
+}
+.form-control:focus {
+  border-color: #ff6b81;
+  box-shadow: 0 0 0 4px rgba(255,107,129,.25);
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  color: var(--muted);
+}
+footer i {
+  font-size: 1.25rem;
+  margin: 0 .35rem;
+}
+
+/* =========================
+   High Contrast Mode
+   ========================= */
+body.contraste-alto {
+  --bg: #000000;
+  --surface: #1a1a1a;
+  --text: #ffffff;
+  --muted: #e8e8e8;
+  --primary: #ffd400;
+  --primary-contrast: #000000;
+  --link: #00e5ff;
+  --border: rgba(255,255,255,.6);
+  background: #000 !important;
+}
+
+body.contraste-alto a {
+  text-decoration: underline;
+}
+
+body.contraste-alto img {
+  filter: brightness(.8) contrast(1.15);
+}
+
+/* =========================
+   Preferências de movimento do usuário
+   ========================= */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================
+   Responsividade
+   ========================= */
+@media (max-width: 992px) {
+  .inicio-fundo {
+    flex-direction: column;
+    text-align: center;
+  }
+  .opcoes-acessibilidade {
+    flex-direction: column;
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav .nav-link {
+    padding: .25rem .5rem;
+  }
+  #botao-acessibilidade {
+    padding: .5rem .75rem;
+  }
+}
