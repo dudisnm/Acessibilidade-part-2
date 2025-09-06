@@ -1,33 +1,31 @@
-Site acessível sobre Filmes de Romance
-Sobre
+# Site acessível sobre Filmes de Romance
 
-Projeto desenvolvido com foco em acessibilidade e boas práticas de desenvolvimento web.
-O site apresenta conteúdos relacionados a filmes de romance, trazendo informações sobre enredos, galerias de imagens e formas de contato, com um design limpo, elegante e inclusivo.
+## Sobre
+Projeto desenvolvido com foco em acessibilidade e boas práticas de desenvolvimento web.  
+O site apresenta conteúdos relacionados a **filmes de romance**, trazendo um design limpo, elegante, responsivo e inclusivo.  
 
-Recursos de acessibilidade
+## Recursos de acessibilidade
+- Uso de atributos **ARIA** para melhor navegação por leitores de tela
+- Textos alternativos (**alt**) em todas as imagens
+- Definição de **tabindex** para navegação pelo teclado
+- **Menu de acessibilidade** com opções de:
+  - Aumentar e diminuir fonte  
+  - Alternar contraste de cores  
+  - Melhorar a experiência de leitura  
 
-Uso de atributos ARIA para melhor navegação por leitores de tela
-
-Textos alternativos (alt) em todas as imagens
-
-Definição de tabindex para navegação pelo teclado
-
-Menu de acessibilidade com opções de:
-
-Aumentar e diminuir fonte
-
-Alternar contraste de cores
-
-Melhorar a experiência de leitura
-
-Tecnologias utilizadas
-
-Bootstrap (para responsividade e componentes visuais)
+## Tecnologias utilizadas
+- **Bootstrap** (para responsividade e componentes visuais)  
+- **ScrollReveal.js** (para animações de entrada)  
+- **HTML5**  
+- **CSS3**  
+- **JavaScript** (para funcionalidades de acessibilidade)
+nentes visuais)
 
 ScrollReveal.js (para animações de entrada)
 
 HTML5
 
 CSS3
+
 
 JavaScript (para funcionalidades de acessibilidade)
